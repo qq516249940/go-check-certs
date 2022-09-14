@@ -11,7 +11,10 @@ Usage looks something like:
 ```
 ./go-check-certs -hosts="./path/to/file/with/hosts"
 ```
-
+```bash
+#60天内到期的
+./go-check-certs -hosts="./path/to/file/with/hosts" -days=60
+```
 The hosts file is simply a single `hostname:port` per line. Empty lines or lines that start with `#` are ignored.
 
 Current limitations:
